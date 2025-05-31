@@ -52,7 +52,10 @@ elements.forEach((element) => {
 
 const list1 = document.querySelector('.categories-1');
 const title1 = document.querySelector(".title-1");
-console.log(`Category: ${title1.textContent}`);
+const textTitle1 = `Category: ${title1.textContent}`;
+list1.classList.replace(list1.classList.value, `list${title1.textContent}`);
+title1.classList.replace(title1.classList.value, `title${title1.textContent}`);
+console.log(textTitle1);
 
 const item1 = list1.querySelectorAll(".position")
 
@@ -68,7 +71,10 @@ console.log(`Elements: ${count1}`);
 
 const list2 = document.querySelector('.categories-2');
 const title2 = document.querySelector(".title-2");
-console.log(`Category: ${title2.textContent}`);
+const textTitle2 = `Category: ${title2.textContent}`;
+list2.classList.replace(list2.classList.value, `list${title2.textContent}`);
+title2.classList.replace(title2.classList.value, `title${title2.textContent}`);
+console.log(textTitle2);
 
 const item2 = list2.querySelectorAll(".position")
 
@@ -84,7 +90,10 @@ console.log(`Elements: ${count2}`);
 
 const list3 = document.querySelector('.categories-3');
 const title3 = document.querySelector(".title-3");
-console.log(`Category: ${title3.textContent}`);
+const textTitle3 = `Category: ${title3.textContent}`;
+list3.classList.replace(list3.classList.value, `list${title3.textContent}`);
+title3.classList.replace(title3.classList.value, `title${title3.textContent}`);
+console.log(textTitle3);
 
 const item3 = list3.querySelectorAll(".position")
 
