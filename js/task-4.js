@@ -13,8 +13,7 @@ const fooForm = loginForm.addEventListener("submit", (event) => {
 
     base.email = email.trim();
     base.password = password.trim();
-
-    console.log(base);
+    
   form.reset();
 
 });
