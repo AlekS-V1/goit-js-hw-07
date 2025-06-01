@@ -111,3 +111,42 @@ h1 {
   color: #2e2f42;
   margin: 0 24px;
 }
+
+/* task 4 */
+
+.login-form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  max-width: 408px;
+  height: 256px;
+  padding: 24px;
+  margin: 0 auto;
+}
+.login-form input {
+  margin: 8px 0;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  margin: 8px 0;
+}
+
+button:hover {
+  background: #6c8cff;
+}
