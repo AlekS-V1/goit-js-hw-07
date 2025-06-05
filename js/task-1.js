@@ -4,6 +4,7 @@ const titles = document.querySelectorAll("h2");
 const categoriesItem = list.querySelectorAll("ul")
 const elements = document.querySelectorAll("li");
 
+
 // підрахунок категорій
 
 let countCat = 0;
@@ -103,3 +104,58 @@ item3.forEach(() => {
     count3++;
 });
 console.log(`Elements: ${count3}`);
+
+// table style
+
+const secondLevelHeadings = document.querySelectorAll("h2");
+
+secondLevelHeadings.forEach((secondLevelHeading) => {
+    secondLevelHeading.style.fontFamily = "'Montserrat', sans-serif";
+    secondLevelHeading.style.fontWeight = "600";
+    secondLevelHeading.style.fontSize = "24px";
+    secondLevelHeading.style.lineHeight = "1.33";
+    secondLevelHeading.style.letterSpacing = "0.04em";
+    secondLevelHeading.style.color = "#2e2f42";
+    secondLevelHeading.style.padding = "0";
+    secondLevelHeading.style.margin = "0 0 16px 0";
+})
+
+
+const unorderLists = document.querySelectorAll("ul");
+
+unorderLists.forEach((unorderList) => {
+
+    unorderList.style.listStyleType = "none";
+    unorderList.style.padding = "0";
+    unorderList.style.margin = "0";
+})
+
+
+const items = document.querySelectorAll(".item");
+
+items.forEach((item) => {
+
+    item.style.borderRadius = "8px";
+    item.style.padding = "16px";
+    item.style.width = "392px";
+    item.style.background = "#f6f6fe";
+    item.style.marginBottom = "24px";
+});
+
+
+const positions = document.querySelectorAll(".position");
+
+positions.forEach((position) => {
+
+    position.style.fontSize = "16px";
+    position.style.fontFamily = "Montserrat";
+    position.style.fontWeight = "400";
+    position.style.letterSpacing = "0.04em";
+    position.style.color = "#2e2f42";
+    position.style.border = "1px solid #808080";
+    position.style.borderRadius = "4px";
+    position.style.width = "360px";
+    position.style.padding = "6px 16px";
+    position.style.marginTop = "8px";
+    position.style.height = "40px";
+});

@@ -40,5 +40,37 @@ for (const element of images) {
   list.append(imageItem);
 }
 
+// table style
+
+
+
+document.querySelectorAll("ul").forEach((unorderList) => {
+
+  unorderList.style.listStyleType = "none";
+  unorderList.style.padding = "0";
+});
+
+const gallery = document.querySelector(".gallery"); 
+
+  gallery.style.display = "flex";
+  gallery.style.flexWrap = "wrap";
+  gallery.style.width = "1128px";
+  gallery.style.height = "648px";
+  gallery.style.margin = "0 auto";
+  gallery.style.columnGap = "24px";
+  gallery.style.rowGap = "48px";
+
+
+document.querySelectorAll("li").forEach((listItem) => {
+  listItem.style.width = "calc((100% - 2 * 24px) / 3)";
+});
+
+
+document.querySelectorAll("img").forEach((pictur) => {
+  
+  pictur.style.width = "100%";
+  pictur.style.height = "100%";
+  pictur.style.objectFit = "cover";
+});
 
 
