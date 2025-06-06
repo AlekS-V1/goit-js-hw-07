@@ -28,17 +28,13 @@ const images = [
 const list = document.querySelector(".gallery");
 
 
-for (const element of images) {
+const markup = images
+  .map((image) => `
+      <li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .join("");
 
-  const imageItem = document.createElement("li");
-  const imageTag = document.createElement("img");
+list.innerHTML = markup;
 
-  imageTag.src = element.url;
-  imageTag.alt = element.alt;
-  
-  imageItem.append(imageTag);
-  list.append(imageItem);
-}
 
 // table style
 

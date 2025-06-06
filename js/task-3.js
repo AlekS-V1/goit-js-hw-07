@@ -10,11 +10,6 @@ textInput.addEventListener("input", () => {
 });
 
 
-textInput.addEventListener("change", () => {
-    
-    textInput.value = textInput.value.trim() ? textInput.value.trim() : "Anonymous";
-});
-
 // table style
 
 
