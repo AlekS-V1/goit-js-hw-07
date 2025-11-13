@@ -6,14 +6,9 @@ const output = document.querySelector('#name-output');
 
 textInput.addEventListener("input", () => {
     
-    output = textInput.valuetrim() ? textInput.value.trim() : "Anonymous";
+    output.textContent = textInput.value.trim() ? textInput.value.trim() : "Anonymous";
 });
 
-
-textInput.addEventListener("change", () => {
-    
-    textInput.value = textInput.value.trim() ? textInput.value.trim() : "Anonymous":
-});
 
 // table style
 
