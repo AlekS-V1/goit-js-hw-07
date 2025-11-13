@@ -25,20 +25,16 @@ const images = [
   }
 ];
 
-const list = document.querySelector(".gallery');
+const list = document.querySelector(".gallery");
 
 
-for (const element of images) {
+const markup = images
+  .map((image) => `
+      <li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .join("");
 
-  const imageItem = document.createElement("li");
-  const imageTag = document.createElement("img");
+list.innerHTML = markup;
 
-  imageTag.src = element.url;
-  imageTag.alt = element.alt;
-  
-  imageItem.append(imageTag);
-  list.append(imageItem);
-}
 
 // table style
 
@@ -66,10 +62,10 @@ document.querySelectorAll("li").forEach((listItem) => {
 });
 
 
-document.querySelectorAll("img").forEach((picture) => {
+document.querySelectorAll("img").forEach((pictur) => {
   
-  picture.style.width = "100%";
-  picture.style.height = "100%";
-  picture.style.objectFit = "cover";
+  pictur.style.width = "100%";
+  pictur.style.height = "100%";
+  pictur.style.objectFit = "cover";
 });
 
