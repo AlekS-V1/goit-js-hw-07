@@ -8,10 +8,17 @@ const button = document.querySelector(".change-color");
 const spanColor = document.querySelector(".color");
 const backgroundColor = document.querySelector("body");
 
+
 button.addEventListener("click", () => {
-  backgroundColor.style.backgroundColor = getRandomHexColor();
-  spanColor.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  backgroundColor.style.backgroundColor = color;
+  spanColor.textContent = color;
 });
+
+
+
+
+
 
 // table style
 
